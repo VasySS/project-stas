@@ -1,20 +1,18 @@
 package components
 
 templ Home() {
-    <div>
-        <h1>TimelineJS3 + HTMX + Go (templ)</h1>
-
-        <button
-            hx-get="/timeline"
-            hx-target="#timeline-container"
-            hx-swap="innerHTML"
-            class="btn"
-        >
-            Load Timeline
-        </button>
-
-        <div id="timeline-container" style="margin-top: 1rem;">
-            <!-- htmx will load the timeline here -->
-        </div>
-    </div>
+	<div>
+		<h1>TimelineJS3 + HTMX + Go (templ)</h1>
+		<button
+			hx-get="/timeline"
+			hx-target="#timeline-container"
+			hx-swap="innerHTML"
+			class="btn"
+		>
+			Load Timeline
+		</button>
+		<div id="timeline-container" style="margin-top: 1rem;">
+			<!-- htmx will load the timeline here -->
+		</div>
+	</div>
 }
