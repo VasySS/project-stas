@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/static/lore.json"
+            ],
+            "url": "/static/_lore_schema.json"
+        }
+    ]
+}

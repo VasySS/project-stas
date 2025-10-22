@@ -1,0 +1,107 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "title": "TimelineJS3 Data",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "object",
+            "properties": {
+                "text": {
+                    "type": "object",
+                    "properties": {
+                        "headline": {
+                            "type": "string"
+                        },
+                        "text": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "headline"
+                    ]
+                }
+            },
+            "required": [
+                "text"
+            ]
+        },
+        "events": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "start_date": {
+                        "type": "object",
+                        "properties": {
+                            "year": {
+                                "type": "string"
+                            },
+                            "month": {
+                                "type": "string"
+                            },
+                            "day": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "year"
+                        ]
+                    },
+                    "end_date": {
+                        "type": "object",
+                        "properties": {
+                            "year": {
+                                "type": "string"
+                            },
+                            "month": {
+                                "type": "string"
+                            },
+                            "day": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "text": {
+                        "type": "object",
+                        "properties": {
+                            "headline": {
+                                "type": "string"
+                            },
+                            "text": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "headline"
+                        ]
+                    },
+                    "media": {
+                        "type": "object",
+                        "properties": {
+                            "url": {
+                                "type": "string"
+                            },
+                            "caption": {
+                                "type": "string"
+                            },
+                            "credit": {
+                                "type": "string"
+                            },
+                            "thumbnail": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "start_date",
+                    "text"
+                ]
+            }
+        }
+    },
+    "required": [
+        "title",
+        "events"
+    ]
+}

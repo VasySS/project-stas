@@ -1,0 +1,15 @@
+package components
+
+templ TimelineFragment() {
+    <div id="timeline-embed"></div>
+
+    <script>
+        fetch('/api/timeline-data')
+            .then(res => res.json())
+            .then(data => {
+                new TL.Timeline('timeline-embed', data, {
+                    scale_factor: 0.2
+                });
+            });
+    </script>
+}

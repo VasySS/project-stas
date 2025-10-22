@@ -1,0 +1,32 @@
+{
+    "title": {
+        "text": {
+            "headline": "СТАС БАРДАШ",
+            "text": "Лор великого человека"
+        }
+    },
+    "events": [
+        {
+            "start_date": {
+                "year": "2025",
+                "month": "10",
+                "day": "22"
+            },
+            "text": {
+                "headline": "Setup Complete",
+                "text": "Timeline data is now loaded from disk!"
+            }
+        },
+        {
+            "start_date": {
+                "year": "2025",
+                "month": "11",
+                "day": "01"
+            },
+            "text": {
+                "headline": "Dynamic Data",
+                "text": "You can now edit timeline.json without recompiling Go."
+            }
+        }
+    ]
+}
